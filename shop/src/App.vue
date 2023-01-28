@@ -1,0 +1,100 @@
+<template>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div class="container">
+      <!-- <h1>{{ counter }}</h1> -->
+    <div class="row">
+  <!-- <card 
+    v-for="product in products"
+     :key="product" 
+     :product="product" 
+  /> -->
+<!-- <card/> -->
+  <!-- <card card_title = "Card Title"/> -->
+  <!-- <card card_title = "Card Title"/>
+  <card card_title = "Card Title"/>
+  <card card_title = "Card Title"/>
+  <card card_title = "Card Title"/>
+  <card card_title = "Card Title"/>
+  <card card_title = "Card Title"/> -->
+
+  <!-- <Attribute_binding/> -->
+
+  <!-- <Button_togle_computed/> -->
+  <Togle_show/>
+
+
+  </div>
+  </div>
+  
+
+</template>
+
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+// import card from './components/card.vue'
+// import Attribute_binding from './components/attribute_binding.vue';
+
+// import Button_togle_computed from './components/button_togle_computed.vue';
+import Togle_show from './components/togle_show.vue';
+
+export default {
+  name: 'App',
+  components: {
+    // card
+    // HelloWorld
+    // Attribute_binding,
+    // Button_togle_computed,
+    Togle_show
+},
+  data() {
+    return {
+      counter:0,
+      products:[
+        {
+          name:"Product1",
+          desc:"knfdfdd"
+        },
+        {
+          name:"Product2",
+          desc:"knfdfdd"
+        },
+        {
+          name:"Product3",
+          desc:"knfdfdd"
+        },
+        {
+          name:"Product4",
+          desc:"knfdfdd"
+        },
+        {
+          name:"Product5",
+          desc:"knfdfdd"
+        },
+        {
+          name:"Product6",
+          desc:"knfdfdd"
+        },
+        
+      ]
+    }
+  },
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+</style>
