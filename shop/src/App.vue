@@ -21,7 +21,10 @@
   <!-- <Attribute_binding/> -->
 
   <!-- <Button_togle_computed/> -->
-  <Togle_show/>
+  <!-- <Togle_show/> -->
+  <!-- <home/> -->
+
+  <Login_form />
 
 
   </div>
@@ -36,7 +39,9 @@
 // import Attribute_binding from './components/attribute_binding.vue';
 
 // import Button_togle_computed from './components/button_togle_computed.vue';
-import Togle_show from './components/togle_show.vue';
+// import Togle_show from './components/togle_show.vue';
+// import home from './components/home.vue'
+import Login_form from './components/login_form.vue';
 
 export default {
   name: 'App',
@@ -45,7 +50,9 @@ export default {
     // HelloWorld
     // Attribute_binding,
     // Button_togle_computed,
-    Togle_show
+    // Togle_show
+    // home,
+    Login_form
 },
   data() {
     return {

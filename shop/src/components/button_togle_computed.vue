@@ -1,20 +1,15 @@
 <template lang="">
-    <div>
-       <h2 v-if="display">Display conditionally</h2>
-    <button @click="displayBoolean = !displayBoolean">Toogle</button><br><br>
-    <button @click="count++">Add 1</button>
-    <p>Count is: {{ count }}</p>
+<div>
+    <h2 v-if="display">Display conditionally</h2>
+    <!-- <button @click="displayBoolean = !displayBoolean">Toogle</button><br><br>
+    <button @click="count++">Add 1</button> -->
+    <!-- <p>Count is: {{ count }}</p> -->
     <br><br><br>
     <p>Has published books:</p>
-        <span>{{ togle }}</span>
-
-
-
-  </div>
+    <span>{{ togle }}</span><br><br><br>
+    <span>{{ display }}</span>
+</div>
 </template>
-
-
-
 
 <script>
 export default {
@@ -27,22 +22,23 @@ export default {
             ],
             displayBoolean: true,
             count: 0,
-            val:true
+            val: true
         }
     },
     computed: {
         togle() {
             return this.books.length > 0 ? 'yes' : 'no'
+
         },
         display() {
-            if(this.displayBoolean) {
+            if (this.displayBoolean) {
                 return true
-            }
-            else return false
+            } else return false
         }
     },
 }
 </script>
+
 <style lang="">
-    
+
 </style>
