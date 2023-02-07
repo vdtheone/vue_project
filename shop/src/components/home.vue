@@ -22,6 +22,7 @@
 // import child from './child.vue';
 import user from './user.vue'
 export default {
+    name:"home",
     data() {
         return {
             data: "",

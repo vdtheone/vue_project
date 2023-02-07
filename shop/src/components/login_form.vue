@@ -4,6 +4,8 @@
     <!-- {{ form }} -->
     {{ error }}
     <form>
+
+        
         <br><br>
         <label for="email">Email : </label>
         <input type="text" name="email" id="email" v-model="form.email">
@@ -32,7 +34,9 @@
         <input type="checkbox" value="Java" v-model="form.technology">
         <br><br>
 
-        <button type="button" v-on:click="getdata(),display()" class="btn">Click</button>
+        <button type="button" v-on:click="getdata(),display()" class="btn btn-success">Click</button>
+        <button type="button" class="btn btn-primary">Primary</button><br><br><br>
+        <i class="fa fa-home text-success fa-4x"></i><br><br>
 
     </form>
 </div>
@@ -90,4 +94,5 @@ form {
 h1 {
     background-color: aliceblue;
 }
+
 </style>
